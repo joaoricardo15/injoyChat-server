@@ -1,0 +1,19 @@
+{
+  "name": "role_server",
+  "version": "1.0.0",
+  "description": "websocket server for role",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaoricardo15/role_server.git"
+  },
+  "author": "João Ricardo Cardoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaoricardo15/role_server/issues"
+  },
+  "homepage": "https://github.com/joaoricardo15/role_server#readme"
+}
