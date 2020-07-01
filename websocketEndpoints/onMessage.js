@@ -44,16 +44,13 @@ function sendMessageToOnlineUsers(
 ) {
   getOnlineUsers().then((data) => {
     const onlineUsers = data.Items;
-    const myIndexOnOnlineUsers = onlineUsers.findIndex(
-      (x) => x.connectionid === connectionId
-    );
     const onlineUsersOnRoom = onlineUsers.filter(
-      (x) => x.roomName === onlineUsers[myIndexOnOnlineUsers].roomName
+      (x) => x.roomName === roomName
     );
 
     for (var i = 0; i < onlineUsersOnRoom.length; i++) {
       sendMessage(
-        onlineUsers[i].connectionid,
+        onlineUsersOnRoom[i].connectionid,
         JSON.stringify({ id, displayName, roomName, message })
       );
     }
